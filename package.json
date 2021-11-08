@@ -7,7 +7,8 @@
         "stub-api": "node stub-api/index.js",
         "webpack-serve": "webpack serve",
         "start": "run-p stub-api webpack-serve",
-        "test": "echo \"Error: no test specified && exit 1"
+        "test": "echo \"Error: no test specified && exit 1",
+        "format": "prettier --write \"src/**/*.js\""
     },
     "author": "",
     "license": "ISC",
@@ -16,7 +17,8 @@
         "bootstrap": "^4.3.1",
         "react": "^17.0.2",
         "react-bootstrap": "^1.6.1",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "react-error-boundary": "^3.1.4"
     },
     "devDependencies": {
         "@babel/core": "^7.14.6",
@@ -31,6 +33,7 @@
         "faker": "^5.5.3",
         "html-webpack-plugin": "^5.3.2",
         "npm-run-all": "^4.1.5",
+        "prettier": "2.4.1",
         "randomstring": "^1.2.1",
         "sass": "^1.35.2",
         "sass-loader": "^12.1.0",

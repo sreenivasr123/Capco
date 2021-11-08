@@ -1,0 +1,11 @@
+$base-color: #ff8c00;
+$base-hover: #d57500;
+$opensans-regular: 'Open Sans', sans-serif;
+$color-white: #fff;
+
+$radius: 4px;
+
+@mixin rounded {
+  border-radius: $radius;
+  outline: none;
+}

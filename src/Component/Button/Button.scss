@@ -1,20 +1,21 @@
-.Button{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 32px;
-    button{
-        background: #ff8c00;
-        border: none;
-        font-size: 18px;
-        color: #fff;
-        outline: none;
-        width:140px;
-        height: 46px;
-        font-family: sans-serif;    
-        border-radius: 4px;
-        transition: .2s;
-        &:hover{
-            background: #d57500
-        }
+@import '../../Utils/variables';
+
+.Button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  button {
+    @include rounded;
+    background: $base-color;
+    border: none;
+    font-size: 18px;
+    color: $color-white;
+    width: 140px;
+    height: 46px;
+    font-family: $opensans-regular;
+    transition: 0.2s;
+    &:hover {
+      background: $base-hover;
     }
+  }
 }
